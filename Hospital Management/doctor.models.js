@@ -22,8 +22,8 @@ const doctorSchema = new mongoose.Schema({
             type : mongoose.Schema.Types.ObjectId,
             ref : 'Hospital'
         },
-        
+
     ]
 }, {timestamps : true})
 
-export const Doctor = mongoose.model('Doctor' ,doctorSchema )
+export const Doctor = mongoose.model('Doctor' ,doctorSchema)
