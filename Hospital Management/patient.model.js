@@ -30,6 +30,11 @@ const patientSchema = new mongoose.Schema({
     admittedIn : {
         type : mongoose.Schema.Types.ObjectId,
         ref : 'Hospital'
+    },
+
+    medicalRecords : {
+        type : mongoose.Schema.Types.ObjectId,
+        ref : 'MedicalRecord'
     }
 }, {timestamps : true})
 
